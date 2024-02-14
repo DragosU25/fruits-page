@@ -32,11 +32,23 @@
   align-items: center;
 }
 
+.footer-list {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
 @media (width>=768px) {
   .footer-container {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+  }
+
+  .footer-list {
+    margin: 0;
   }
 
   .footer-main-container {
