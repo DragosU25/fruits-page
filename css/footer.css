@@ -1,0 +1,126 @@
+:root {
+  --white-bg-text-color: rgba(0, 0, 0, 1);
+  --background-color: rgba(174, 19, 50, 1);
+  --text-color: rgba(255, 255, 255, 1);
+  --green-fruits-card: rgba(164, 203, 102, 1);
+  --yellow-fruits-card: rgba(245, 206, 19, 1);
+  --red-fruits-card: rgba(174, 19, 50, 1);
+  --icons-color: rgba(174, 19, 50, 1);
+  --fw-bold: 700;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fs-small: 14px;
+  --fs-medium: 18px;
+  --fs-big: 32px;
+  --fs-subtitle: 40px;
+  --title-fs: 64px;
+}
+
+.footer {
+  width: 100%;
+  background-color: var(--text-color);
+}
+
+.footer-container {
+  padding: 80px 32px;
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+@media (width>=768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .footer-image {
+    width: 349px !important;
+    height: 179px !important;
+  }
+}
+
+@media (width>=1280px) {
+  .footer-main-container {
+    flex-direction: row;
+    gap: 243px;
+  }
+}
+
+.footer-image {
+  width: 335px;
+  height: 172px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.footer-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-media-list {
+  display: flex;
+  gap: 20px;
+}
+
+.social-media-container {
+  margin-top: 20px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #ae1332;
+}
+
+.social-mdia-icon {
+  fill: var(--red-fruits-card);
+}
+
+.social-media-container:hover,
+.social-media-container:focus {
+  background-color: rgba(174, 19, 50, 0.1);
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 180px;
+}
+
+.footer-address a {
+  text-align: center;
+}
+
+.footer-link {
+  color: #ae1332;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+  letter-spacing: -0.36px;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--green-fruits-card);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}

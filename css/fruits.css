@@ -1,0 +1,209 @@
+:root {
+  --white-bg-text-color: rgba(0, 0, 0, 1);
+  --background-color: rgba(174, 19, 50, 1);
+  --text-color: rgba(255, 255, 255, 1);
+  --green-fruits-card: rgba(164, 203, 102, 1);
+  --yellow-fruits-card: rgba(245, 206, 19, 1);
+  --red-fruits-card: rgba(174, 19, 50, 1);
+  --icons-color: rgba(174, 19, 50, 1);
+  --fw-bold: 700;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fs-small: 14px;
+  --fs-medium: 18px;
+  --fs-big: 32px;
+  --fs-subtitle: 40px;
+  --title-fs: 64px;
+}
+
+.fruits-section {
+  position: relative;
+}
+
+.section-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.fruits-section-text {
+  max-width: 547px;
+}
+
+.fruit-card-image {
+  width: 295px;
+  height: 251px;
+  object-fit: contain;
+  object-position: center;
+}
+.fruit-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 24px;
+  column-gap: 24px;
+  flex-wrap: wrap;
+  margin: 44px 0;
+}
+
+.fruit-card {
+  /* padding: 64px 47px 24px 24px; */
+  padding: 64px 20px 24px 24px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+}
+
+.card-1 {
+  background-color: #f8766b;
+}
+
+.card-2 {
+  background-color: var(--yellow-fruits-card);
+}
+
+.card-3 {
+  background-color: var(--green-fruits-card);
+}
+
+.card-4 {
+  background-color: rgba(191, 214, 99, 1);
+}
+
+.card-5 {
+  background-color: rgba(233, 63, 41, 1);
+}
+
+.card-6 {
+  background-color: rgba(219, 79, 75, 1);
+}
+
+.card-7 {
+  background-color: rgba(155, 83, 102, 1);
+}
+
+.card-8 {
+  background-color: rgba(244, 127, 76, 1);
+}
+
+.card-9 {
+  background-color: rgba(152, 179, 126, 1);
+}
+
+.fruit-list li:nth-child(7) {
+  display: none;
+}
+
+.fruit-list li:nth-child(8) {
+  display: none;
+}
+
+@media (width>=768px) {
+  .fruit-list li:nth-child(7) {
+    display: contents;
+  }
+
+  .fruit-list li:nth-child(8) {
+    display: contents;
+  }
+}
+
+@media (width>=1280px) {
+  .fruit-list li:nth-child(9) {
+    display: contents !important;
+  }
+}
+
+.fruit-list li:nth-child(9) {
+  display: none;
+}
+
+.fruit-card-title {
+  font-size: var(--fs-big);
+  font-style: normal;
+  font-weight: var(--fw-bold);
+  line-height: 38px; /* 118.75% */
+  letter-spacing: -1.28px;
+  margin-bottom: 8px;
+}
+
+.fruit-card-text {
+  font-family: "DM Sans";
+  font-size: var(--fs-medium);
+  font-style: normal;
+  font-weight: var(--fw-regular);
+  line-height: 24px; /* 133.333% */
+  letter-spacing: -0.36px;
+}
+
+.card-image-container {
+  position: relative;
+}
+
+.oval-icon {
+  fill: #000;
+  opacity: 0.2;
+  filter: blur(13.591408729553223px);
+}
+
+.oval-icon-container {
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+}
+
+.fruit-price {
+  padding: 15px 42px;
+  background-color: var(--text-color);
+  border-radius: 200px;
+  color: var(--red-fruits-card);
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-medium);
+  line-height: 24px; /* 133.333% */
+  letter-spacing: -0.72px;
+}
+
+.order-button {
+  color: #fff;
+  background-color: var(--green-fruits-card);
+  text-align: center;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px; /* 100% */
+  letter-spacing: -1.12px;
+  text-transform: uppercase;
+  transform: rotate(-14deg);
+  padding: 20px;
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  border: none;
+  bottom: -20px;
+  left: 210px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0 auto;
+  transition: width 0.35s ease-in-out, background 0.35s ease-in-out;
+}
+
+.order-button:hover,
+.order-button:focus {
+  background-color: #fff;
+  color: var(--green-fruits-card);
+}
+
+.order-button:hover .arrow-icon,
+.order-button:focus .arrow-icon {
+  fill: var(--green-fruits-card);
+}
+
+.arrow-icon {
+  fill: #fff;
+}
