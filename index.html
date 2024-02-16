@@ -556,9 +556,45 @@
                     placeholder="Enter comments..."
                   ></textarea>
 
-                  <button type="submit" class="submit-button">Submit</button>
+                  <button
+                    type="submit"
+                    class="submit-button"
+                    data-thanx-modal-open
+                  >
+                    Submit
+                  </button>
                 </div>
               </form>
+
+              <div class="thank-u-modal is-hidden" data-thanx-modal>
+                <div class="modal-conent">
+                  <button
+                    type="button"
+                    class="thank-u-modal-button"
+                    data-thanx-modal-close=""
+                  >
+                    <svg width="28" height="28" class="white-icon-close">
+                      <use
+                        href="./images/icons.svg#icon-x"
+                        class="close-white-icon"
+                      ></use>
+                    </svg>
+                  </button>
+                  <img
+                    src="./images/moda-image.png"
+                    alt=""
+                    class="modal-image"
+                  />
+                  <h2 class="modal-title">Thank you</h2>
+                  <p class="modal-text">
+                    Thank you for your order! Our team is preparing your box
+                    with fresh, delicious fruits and vegetables, and we'll
+                    deliver it straight to your doorstep. We appreciate your
+                    business and look forward to providing you with the best
+                    possible experience!
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -682,5 +718,6 @@
     </footer>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/thanx-modal.js"></script>
   </body>
 </html>
