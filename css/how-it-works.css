@@ -129,8 +129,6 @@
 }
 
 .section-gif {
-  /* width: 860px;
-  height: 476px; */
   width: 335px;
   height: 476px;
   object-fit: cover;
@@ -140,6 +138,4 @@
   margin: auto;
   margin-top: 44px;
   margin-bottom: 80px;
-  /* margin-top: 81px;
-  margin-bottom: 150px; */
 }
